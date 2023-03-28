@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Abschlussquiz</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="pda"/>
+  </property>
+  <property name="statusTip">
+   <string>Ja?</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>611</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="Choices">
+     <item row="1" column="0">
+      <widget class="QPushButton" name="ChoiceB">
+       <property name="text">
+        <string>Choice B</string>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="ChoiceC">
+       <property name="text">
+        <string>Choice C</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="ChoiceD">
+       <property name="text">
+        <string>Choice D</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="ChoiceA">
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Choice A</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="NextQuestion">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>590</y>
+      <width>110</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nächste Frage</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="QuestionBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>591</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Question?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>641</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="Top">
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="PlayerA">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Spieler 1: 0 Punkte</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="PlayerB">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>191</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Spieler 2: 0 Punkte</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="loadQuestionSet">
+         <property name="text">
+          <string>Fragen laden</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="AddPlayers">
+         <property name="text">
+          <string>Spieler hinzufügen</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>ChoiceA</tabstop>
+  <tabstop>ChoiceB</tabstop>
+  <tabstop>ChoiceC</tabstop>
+  <tabstop>ChoiceD</tabstop>
+  <tabstop>NextQuestion</tabstop>
+  <tabstop>AddPlayers</tabstop>
+  <tabstop>loadQuestionSet</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

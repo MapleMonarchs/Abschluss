@@ -1,0 +1,22 @@
+{
+  "questions" : [
+    {
+      "id": "0",
+      "question": "0?",
+      "answerA": "0",
+      "answerB": "1",
+      "answerC": "2",
+      "answerD": "3",
+      "correct": "0"
+    },
+    {
+      "id": "1",
+      "question": "Was warum wie wieso wer?",
+      "answerA": "5Ws",
+      "answerB": "6Ws",
+      "answerC": "W",
+      "answerD": "Was",
+      "correct": 3
+    }
+  ]
+}
